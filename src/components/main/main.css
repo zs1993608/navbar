@@ -1,0 +1,93 @@
+.main {
+    position: relative;
+    height: 100%;
+  }
+  @keyframes marglft {
+    from {
+      margin-left: 0px;
+    }
+  }
+  .main to {
+    margin-left: 120px;
+  }
+  .main .whole {
+    height: 100%;
+    font-size: 20px;
+    position: absolute;
+    position: relative;
+    top: 0;
+  }
+  .main .whole .icon {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    font-size: 20px;
+    color: black;
+    z-index: 10000;
+    text-align: center;
+    line-height: 65px;
+    color: white;
+    transition: 1s;
+  }
+  .main .whole .top {
+    height: 100%;
+    position: absolute;
+    position: relative;
+    transition: 1s;
+  }
+  .main .whole .top .thisinbox {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    height: 65px;
+    line-height: 60px;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(22, 148, 238, 0.6);
+    z-index: 1000;
+  }
+  .main .whole .top .list {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+  }
+  .main .bk {
+    top: 0;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    z-index: 0;
+  }
+  .main .icon:active {
+    margin-left: 120px;
+  }
+  .main .icon:active + .top {
+    margin-left: 120px;
+  }
+  .main .icon1,
+  .main .icon2,
+  .main .icon3,
+  .main .icon4 {
+    top: 0;
+    transition: 1s;
+    color: rgba(255, 255, 255, 0);
+  }
+  .main .icon:active + .bk .icon1 {
+    color: white;
+  }
+  .main .icon:active + .bk .icon2 {
+    top: 80px;
+    color: white;
+  }
+  .main .icon:active + .bk .icon3 {
+    top: 160px;
+    color: white;
+  }
+  .main .icon:active + .bk .icon4 {
+    top: 320px;
+    color: white;
+  }
+  

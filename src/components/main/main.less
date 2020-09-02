@@ -1,0 +1,98 @@
+.main{
+    position:relative;
+    height:100%;
+    @keyframes marglft {
+        from{
+            margin-left:0px;
+        }
+    }to{
+    margin-left:120px;
+    }
+    .whole{
+        height:100%;
+        font-size:20px;
+        position:absolute;
+        position:relative;
+        top:0;
+        
+
+        .icon{
+            position: absolute;
+            width:65px;
+            height:65px;
+            font-size:20px;
+            color:black;
+            z-index: 10000;
+            text-align:center;
+            line-height:65px;
+            color:white;
+            transition:1s;
+            
+        }
+        .top{
+            height:100%;
+            position:absolute;
+            position:relative;
+            transition:1s;
+            .thisinbox{
+                font-size:20px;
+                text-align:center;
+                color:white;
+            font-weight:bold;
+                height:65px;
+                line-height: 60px;
+                position:absolute;
+                width:100%;
+                background-color: rgba(22, 148, 238, 0.6);
+                z-index:1000;
+                // background-color: #fff;
+            }
+        
+            .list{
+                position:absolute;
+                z-index:10;
+                left:0;
+                right:0;
+                background-color: #fff;
+            }
+        }
+    }
+
+    .bk{
+        top:0;
+        width:100%;
+        position: absolute;
+            height:100%;
+            z-index:0;
+
+    }
+    
+
+    .icon:active{
+        margin-left:120px;
+    }
+    .icon:active+.top{
+        margin-left:120px;
+    }
+    .icon1,.icon2, .icon3, .icon4{
+        top:0;
+        transition:1s;
+        color:rgba(255,255,255,0)
+    }
+    .icon:active+.bk .icon1{
+        color:white;
+    }
+    .icon:active+.bk .icon2{
+        top:80px;
+        color:white;
+    }
+    .icon:active+.bk .icon3{
+        top:160px;
+        color:white;
+    }
+    .icon:active+.bk .icon4{
+        top:320px;
+        color:white;
+    }
+
+}

@@ -1,0 +1,30 @@
+.back-main {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(#3b6a80, #232838);
+    position: relative;
+  }
+  .back-main .photo {
+    position: absolute;
+    border-radius: 100%;
+    width: 75px;
+    height: 75px;
+    background-color: #fff;
+    top: 45px;
+    left: 25px;
+  }
+  .back-main .list {
+    position: absolute;
+    position: relative;
+    top: 200px;
+    left: 35px;
+  }
+  .back-main .list .icon1,
+  .back-main .list .icon2,
+  .back-main .list .icon3,
+  .back-main .list .icon4 {
+    position: absolute;
+    font-size: 56px;
+    color: rgba(255, 255, 255, 0);
+  }
+  
